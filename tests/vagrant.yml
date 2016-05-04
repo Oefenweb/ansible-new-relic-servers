@@ -6,4 +6,4 @@
   roles:
     - ../../
   vars:
-    new_relic_servers_license_key: da39a3ee5e6b4b0d3255bfef95601890afd80709
+    new_relic_servers_license_key: "{{ lookup('env', 'NEW_RELIC_LICENSE_KEY') }}"
