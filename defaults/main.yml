@@ -1,0 +1,10 @@
+# defaults file for new-relic-servers
+---
+new_relic_servers_loglevel: info
+new_relic_servers_logfile: /var/log/newrelic/nrsysmond.log
+new_relic_servers_ssl: true
+new_relic_servers_hostname: "{{ inventory_hostname }}"
+new_relic_servers_pidfile: /var/run/newrelic/nrsysmond.pid
+new_relic_servers_disable_nfs: false
+new_relic_servers_disable_docker: false
+new_relic_servers_ignore_reclaimable: true

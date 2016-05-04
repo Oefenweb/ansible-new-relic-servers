@@ -1,0 +1,7 @@
+# test file for new-relic-servers
+---
+- hosts: localhost
+  connection: local
+  sudo: true
+  roles:
+    - ../../

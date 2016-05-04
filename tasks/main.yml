@@ -1,0 +1,29 @@
+# tasks file for new-relic-servers
+---
+- include: repository.yml
+  tags:
+    - configuration
+    - new-relic-servers
+    - new-relic-servers-repository
+
+- include: install.yml
+  tags:
+    - configuration
+    - new-relic-servers
+    - new-relic-servers-install
+
+- include: configure.yml
+  tags:
+    - configuration
+    - new-relic-servers
+    - new-relic-servers-configure
+
+- name: start and enable service
+  service:
+    name: newrelic-sysmond
+    state: started
+    enabled: true
+  tags:
+    - configuration
+    - new-relic-servers
+    - new-relic-servers-haproxy-start-enable-service
