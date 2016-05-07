@@ -5,7 +5,7 @@
   sudo: true
   pre_tasks:
     - debug:
-        msg: "{{ iten }}"
+        msg: "{{ item }}"
       with_items:
         - "{{ lookup('env', 'NEW_RELIC_LICENSE_KEY1') }}"
         - "{{ lookup('env', 'NEW_RELIC_LICENSE_KEY2') }}"
