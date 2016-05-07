@@ -3,6 +3,13 @@
 - hosts: localhost
   connection: local
   sudo: true
+  pre_tasks:
+    - debug:
+        msg: "{{ iten }}"
+      with_items:
+        - "{{ lookup('env', 'NEW_RELIC_LICENSE_KEY1') }}"
+        - "{{ lookup('env', 'NEW_RELIC_LICENSE_KEY2') }}"
+
   roles:
     - ../../
   vars:
