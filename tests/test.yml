@@ -2,6 +2,15 @@
 ---
 - hosts: localhost
   connection: local
+  pre_tasks:
+    - debug:
+        msg: "{{ item }}"
+      with_items:
+        - "{{ lookup('env', 'NEW_RELIC_LICENSE_KEY1') }}"
+        - "{{ lookup('env', 'NEW_RELIC_LICENSE_KEY2') }}"
+
+- hosts: localhost
+  connection: local
   sudo: true
   pre_tasks:
     - debug:
