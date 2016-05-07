@@ -5,5 +5,3 @@
   sudo: true
   roles:
     - ../../
-  vars:
-    new_relic_servers_license_key: "{{ lookup('env', 'NEW_RELIC_LICENSE_KEY') }}"
