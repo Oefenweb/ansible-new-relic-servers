@@ -1,0 +1,11 @@
+# vars file for new-relic-servers
+---
+new_relic_servers_repositories:
+  - type: deb
+    url: http://apt.newrelic.com/debian/
+    component: 'newrelic non-free'
+
+new_relic_servers_dependencies:
+  - newrelic-sysmond
+
+new_relic_servers_configuration_file: /etc/newrelic/nrsysmond.cfg

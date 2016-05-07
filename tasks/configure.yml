@@ -1,0 +1,12 @@
+# tasks file for new-relic-servers
+---
+- name: configure | update configuration file
+  template:
+    src: "{{ new_relic_servers_configuration_file.lstrip('/') }}.j2"
+    dest: "{{ new_relic_servers_configuration_file }}"
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart newrelic-sysmond
+  tags:
+    - new-relic-servers-configure-update-configuration-file

@@ -1,0 +1,6 @@
+# handlers file for new-relic-servers
+---
+- name: restart newrelic-sysmond
+  service:
+    name: newrelic-sysmond
+    state: restarted
