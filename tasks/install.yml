@@ -3,7 +3,7 @@
 - name: install | dependencies
   apt:
     name: "{{ item }}"
-    state: latest
+    state: "{{ apt_install_state | default('latest') }}"
   with_items: "{{ new_relic_servers_dependencies }}"
   tags:
     - new-relic-servers-install-dependencies
