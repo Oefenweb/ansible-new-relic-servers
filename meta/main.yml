@@ -1,6 +1,7 @@
 # meta file for new-relic-servers
 ---
 galaxy_info:
+  role_name: new-relic-servers
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
   description: Set up New Relic Servers in Debian-like systems
