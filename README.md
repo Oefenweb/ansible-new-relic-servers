@@ -1,6 +1,7 @@
 ## new-relic-servers
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-new-relic-servers.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-new-relic-servers) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-new--relic--servers-blue.svg)](https://galaxy.ansible.com/Oefenweb/ansible-new-relic-servers)
+[![Build Status](https://travis-ci.org/Oefenweb/ansible-new-relic-servers.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-new-relic-servers)
+[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-new--relic--servers-blue.svg)](https://galaxy.ansible.com/Oefenweb/ansible-new-relic-servers)
 
 Set up [New Relic Servers](https://newrelic.com/server-monitoring) in Debian-like systems.
 

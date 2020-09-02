@@ -13,6 +13,7 @@
     repo: "{{ item.type }} {{ item.url }} {{ item.component }}"
     state: present
     update_cache: true
+    mode: 0644
   with_items: "{{ new_relic_servers_repositories }}"
   tags:
     - new-relic-servers-repository-add
