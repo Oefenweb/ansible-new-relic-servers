@@ -1,4 +1,4 @@
-# tasks file for new-relic-servers
+# tasks file
 ---
 - name: install | dependencies
   apt:

@@ -1,4 +1,4 @@
-# defaults file for new-relic-servers
+# defaults file
 ---
 new_relic_servers_loglevel: info
 new_relic_servers_logfile: /var/log/newrelic/nrsysmond.log

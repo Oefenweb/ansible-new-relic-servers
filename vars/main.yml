@@ -1,4 +1,4 @@
-# vars file for new-relic-servers
+# vars file
 ---
 new_relic_servers_repositories:
   - type: deb

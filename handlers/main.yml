@@ -1,4 +1,4 @@
-# handlers file for new-relic-servers
+# handlers file
 ---
 - name: restart newrelic-sysmond
   service:

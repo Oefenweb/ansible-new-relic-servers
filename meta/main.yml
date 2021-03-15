@@ -1,6 +1,7 @@
-# meta file for new-relic-servers
+# meta file
 ---
 galaxy_info:
+  namespace: oefenweb
   role_name: new-relic-servers
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
