@@ -3,8 +3,8 @@
 - hosts: localhost
   connection: local
   become: true
+  pre_tasks:
+    - name: include vars
+      include_vars: "{{ playbook_dir }}/vars/main.yml"
   roles:
     - ../../
-  vars:
-    new_relic_servers_hostname: ansible-new-relic-servers
-    new_relic_servers_license_key: "{{ lookup('env', 'NEW_RELIC_LICENSE_KEY') }}"
