@@ -79,3 +79,5 @@ jobs:
           MOLECULE_DEBUG: '1'
           MOLECULE_DISTRO: "${{ matrix.distro }}"
           PY_COLORS: '1'
+
+          NEW_RELIC_LICENSE_KEY: "${{ secrets.NEW_RELIC_LICENSE_KEY }}"
