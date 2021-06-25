@@ -2,7 +2,7 @@
 ---
 galaxy_info:
   namespace: oefenweb
-  role_name: new-relic-servers
+  role_name: new_relic_servers
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
   description: Set up New Relic Servers in Debian-like systems
