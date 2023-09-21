@@ -1,7 +1,7 @@
 # tasks file
 ---
 - name: install | dependencies
-  apt:
+  ansible.builtin.apt:
     name: "{{ new_relic_servers_dependencies }}"
     state: "{{ apt_install_state | default('latest') }}"
   tags:

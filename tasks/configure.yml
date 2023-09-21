@@ -1,7 +1,7 @@
 # tasks file
 ---
 - name: configure | update configuration file
-  template:
+  ansible.builtin.template:
     src: "{{ new_relic_servers_configuration_file.lstrip('/') }}.j2"
     dest: "{{ new_relic_servers_configuration_file }}"
     owner: root
