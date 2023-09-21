@@ -1,25 +1,28 @@
 # tasks file
 ---
-- include: repository.yml
+- name: repository
+  ansible.builtin.import_tasks: repository.yml
   tags:
     - configuration
     - new-relic-servers
     - new-relic-servers-repository
 
-- include: install.yml
+- name: install
+  ansible.builtin.import_tasks: install.yml
   tags:
     - configuration
     - new-relic-servers
     - new-relic-servers-install
 
-- include: configure.yml
+- name: configure
+  ansible.builtin.import_tasks: configure.yml
   tags:
     - configuration
     - new-relic-servers
     - new-relic-servers-configure
 
 - name: start and enable service
-  service:
+  ansible.builtin.service:
     name: newrelic-sysmond
     state: "{{ service_default_state | default('started') }}"
     enabled: "{{ service_default_enabled | default(true) | bool }}"
