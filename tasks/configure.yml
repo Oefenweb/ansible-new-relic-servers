@@ -6,7 +6,7 @@
     dest: "{{ new_relic_servers_configuration_file }}"
     owner: root
     group: root
-    mode: 0644
+    mode: '0644'
   notify: restart newrelic-sysmond
   tags:
     - new-relic-servers-configure-update-configuration-file
