@@ -33,7 +33,7 @@ None
 ---
 - hosts: all
   roles:
-    - new-relic-servers
+    - oefenweb.new-relic-servers
   vars:
     new_relic_servers_license_key: da39a3ee5e6b4b0d3255bfef95601890afd80709
 ```
