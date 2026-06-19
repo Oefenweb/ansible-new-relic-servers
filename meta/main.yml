@@ -1,9 +1,8 @@
 # meta file
 ---
 galaxy_info:
-  namespace: oefenweb
+  author: oefenweb
   role_name: new_relic_servers
-  author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
   description: Set up New Relic Servers in Debian-like systems
   license: MIT
@@ -11,16 +10,14 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - precise
-        - trusty
-        - xenial
         - bionic
+        - focal
+        - jammy
+        - noble
     - name: Debian
       versions:
-        - wheezy
-        - jessie
-        - stretch
-        - buster
+        - bullseye
+        - bookworm
   galaxy_tags:
     - system
     - monitoring

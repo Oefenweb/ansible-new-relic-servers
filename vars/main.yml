@@ -5,6 +5,12 @@ new_relic_servers_repositories:
     url: http://apt.newrelic.com/debian/
     component: 'newrelic non-free'
 
+new_relic_servers_dependencies_pre:
+  - software-properties-common
+  - dirmngr
+  - gnupg
+  - gpg-agent
+
 new_relic_servers_dependencies:
   - newrelic-sysmond
 
