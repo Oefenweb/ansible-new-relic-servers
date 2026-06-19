@@ -11,8 +11,8 @@
 
 - name: repository | add public key
   ansible.builtin.apt_key:
-    id: 548C16BF
-    url: https://download.newrelic.com/548C16BF.gpg
+    id: 2DAD550E
+    url: https://download.newrelic.com/NEWRELIC_APT_2DAD550E.public
     state: present
   tags:
     - new-relic-servers-repository-public-key
